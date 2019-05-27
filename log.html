@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>GameGuidez</title>
+</head>
+<body class="grey lighten-3">
+
+
+
+<h4>Sign up</h4><br />
+<form id="signup-form">
+    <div class="input-field">
+        <input type="email" id="signup-email" required />
+        <label for="signup-email">Email address</label>
+    </div>
+    <div class="input-field">
+        <input type="password" id="signup-password" required />
+        <label for="signup-password">Choose password</label>
+    </div>
+    <button class="btn yellow darken-2 z-depth-0">Sign up</button>
+</form>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDHO4IvJJq7jAyx8JEH5KXTRNPZR7gWd0E",
+        authDomain: "comicmania-parissi.firebaseapp.com",
+        databaseURL: "https://comicmania-parissi.firebaseio.com",
+        projectId: "comicmania-parissi",
+        storageBucket: "comicmania-parissi.appspot.com",
+        messagingSenderId: "170044031100",
+        appId: "1:170044031100:web:f62e0a3d7533ac2a"
+    };
+    firebase.initializeApp(config);
+
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+</script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="scripts/auth.js"></script>
+</body>
+</html>
