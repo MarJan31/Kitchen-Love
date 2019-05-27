@@ -24,10 +24,43 @@
             border:0px;}
         a{color: black}
     </style>
+
     <script>
     function disableBtn() {
         document.getElementById("myBtn").disabled = true;
-    }</script>
+    }
+    </script>
+
+    <!---Firebase--->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB4H4Fe5ZgAzBedRuOqZfZWhZT9Xfv7aw8",
+            authDomain: "kitchenlove-d51fd.firebaseapp.com",
+            databaseURL: "https://kitchenlove-d51fd.firebaseio.com",
+            projectId: "kitchenlove-d51fd",
+            storageBucket: "kitchenlove-d51fd.appspot.com",
+            messagingSenderId: "947330406133",
+            appId: "1:947330406133:web:4f7fadc7c70a572d"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        //make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        //update firestore settings
+        db.settings({ timestampsInSnapshots: true});
+    </script>
+
+    //compiled and minified JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/masterialize.min.js"></script>
+    <script src="scripts/auth.js"></script>
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
 </head>
