@@ -32,7 +32,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {
+    var config = {
         apiKey: "AIzaSyB4H4Fe5ZgAzBedRuOqZfZWhZT9Xfv7aw8",
         authDomain: "kitchenlove-d51fd.firebaseapp.com",
         databaseURL: "https://kitchenlove-d51fd.firebaseio.com",
@@ -42,7 +42,7 @@
         appId: "1:947330406133:web:4f7fadc7c70a572d"
     };
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(config);
 
     //make auth and firestore references
     const auth = firebase.auth();
