@@ -31,24 +31,25 @@
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
 <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyDHO4IvJJq7jAyx8JEH5KXTRNPZR7gWd0E",
-        authDomain: "comicmania-parissi.firebaseapp.com",
-        databaseURL: "https://comicmania-parissi.firebaseio.com",
-        projectId: "comicmania-parissi",
-        storageBucket: "comicmania-parissi.appspot.com",
-        messagingSenderId: "170044031100",
-        appId: "1:170044031100:web:f62e0a3d7533ac2a"
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB4H4Fe5ZgAzBedRuOqZfZWhZT9Xfv7aw8",
+        authDomain: "kitchenlove-d51fd.firebaseapp.com",
+        databaseURL: "https://kitchenlove-d51fd.firebaseio.com",
+        projectId: "kitchenlove-d51fd",
+        storageBucket: "kitchenlove-d51fd.appspot.com",
+        messagingSenderId: "947330406133",
+        appId: "1:947330406133:web:4f7fadc7c70a572d"
     };
-    firebase.initializeApp(config);
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 
-    // make auth and firestore references
+    //make auth and firestore references
     const auth = firebase.auth();
     const db = firebase.firestore();
 
-    // update firestore settings
-    db.settings({ timestampsInSnapshots: true });
+    //update firestore settings
+    db.settings({ timestampsInSnapshots: true});
 </script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
