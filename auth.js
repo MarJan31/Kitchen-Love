@@ -1,13 +1,13 @@
 
 
 // signup
-const signupForm = document.querySelector('#signup-form');
+const signupForm = document.querySelector('#form-signin');
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     // get user info
-    const email = signupForm['signup-email'].value;
-    const password = signupForm['signup-password'].value;
+    const email = signupForm['email'].value;
+    const password = signupForm['password'].value;
 
     // sign up the user
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
