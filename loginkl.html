@@ -7,30 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>..::Kitchen Love::..</title>
 
-    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
-    <script>
-        var config = {
-            apiKey: "AIzaSyB4H4Fe5ZgAzBedRuOqZfZWhZT9Xfv7aw8",
-            authDomain: "kitchenlove-d51fd.firebaseapp.com",
-            databaseURL: "https://kitchenlove-d51fd.firebaseio.com",
-            projectId: "kitchenlove-d51fd",
-            storageBucket: "kitchenlove-d51fd.appspot.com",
-            messagingSenderId: "947330406133",
-            appId: "1:947330406133:web:4f7fadc7c70a572d"
-        };
-
-        firebase.initializeApp(config);
-
-        const auth = firebase.auth();
-        const db = firebase.firestore();
-
-        db.settings({ timestampsInSnapshots: true});
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="auth.js"></script>
 
 </head>
 
@@ -56,4 +32,29 @@
 
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+<script>
+    var config = {
+        apiKey: "AIzaSyB4H4Fe5ZgAzBedRuOqZfZWhZT9Xfv7aw8",
+        authDomain: "kitchenlove-d51fd.firebaseapp.com",
+        databaseURL: "https://kitchenlove-d51fd.firebaseio.com",
+        projectId: "kitchenlove-d51fd",
+        storageBucket: "kitchenlove-d51fd.appspot.com",
+        messagingSenderId: "947330406133",
+        appId: "1:947330406133:web:4f7fadc7c70a572d"
+    };
+
+    firebase.initializeApp(config);
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    db.settings({ timestampsInSnapshots: true});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="auth.js"></script>
+
 </html>
